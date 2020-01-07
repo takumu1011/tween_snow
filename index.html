@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .ballArea{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: #2f4f4f;
+            overflow: hidden;
+        }
+        .ball{
+            position: absolute;
+            top: -10%;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        .ball-1{
+            left: 0;
+        }
+        .ball-2{
+            left: 10%;
+        }
+        .ball-3{
+            left: 20%;
+        }
+        .ball-4{
+            left: 30%;
+        }
+        .ball-5{
+            left: 40%;
+        }
+        .ball-6{
+            left: 50%;
+        }
+        .ball-7{
+            left: 60%;
+        }
+        .ball-8{
+            left: 70%;
+        }
+        .ball-9{
+            left: 80%;
+        }
+        .ball-10{
+            left: 90%;
+        }
+        .ball-11{
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="ballArea">
+        <div class="ball ball-1" id="ball1"></div>
+        <div class="ball ball-2" id="ball2"></div>
+        <div class="ball ball-3" id="ball3"></div>
+        <div class="ball ball-4" id="ball4"></div>
+        <div class="ball ball-5" id="ball5"></div>
+        <div class="ball ball-6" id="ball6"></div>
+        <div class="ball ball-7" id="ball7"></div>            
+        <div class="ball ball-8" id="ball8"></div>            
+        <div class="ball ball-9" id="ball9"></div>            
+        <div class="ball ball-10" id="ball10"></div>            
+        <div class="ball ball-11" id="ball11"></div>            
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script>
+        var duration=5;
+        var delayTime=1;
+        TweenMax.to('#ball1',duration*2,{
+            top: '100%',
+            opacity: .4,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball2',duration*1.3,{
+            top: '100%',
+            opacity: .8,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*7,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball3',duration**1.4,{
+            top: '100%',
+            opacity: .9,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*10,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball4',duration,{
+            top: '100%',
+            opacity: .2,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*5,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball5',duration*2,{
+            top: '100%',
+            opacity: .5,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*9,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball6',duration,{
+            top: '100%',
+            opacity: .8,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*4,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball7',duration*2.1,{
+            top: '100%',
+            opacity: .3,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*1,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball8',duration*1.5,{
+            top: '100%',
+            opacity: .1,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*3,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball9',duration*2.2,{
+            top: '100%',
+            opacity: .9,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*6,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball10',duration*0.8,{
+            top: '100%',
+            opacity: .7,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*2,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+        TweenMax.to('#ball11',duration*1.8,{
+            top: '100%',
+            opacity: .6,
+            ease: 'Linear.easeNone',
+            repeat: -1,
+            delay: delayTime*8,
+            onComplete: function(){
+                this.pause(0);
+            }
+        });
+    </script>
+</body>
+</html>
